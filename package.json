@@ -1,0 +1,17 @@
+{
+  "name": "tactile-ui",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm --workspace apps/site run dev",
+    "build": "npm run build --workspaces",
+    "start": "npm --workspace apps/site run start",
+    "typecheck": "npm run typecheck --workspaces"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.2"
+  }
+}
